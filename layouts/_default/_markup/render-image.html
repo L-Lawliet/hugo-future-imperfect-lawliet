@@ -1,0 +1,10 @@
+{{if .Page.Site.Params.fancybox }}
+<!-- <div class="post-img-view"> -->
+<figure>
+    <a data-fancybox="gallery" href="{{ .Destination | safeURL }}" {{ with .Title}} data-caption="{{ . }}"{{ end }} >
+        <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} />
+    </a>
+    <figcaption>{{ with .Title}}{{ . }}{{ end }}</figcaption>
+</figure>
+<!-- </div> -->
+{{ end }}
