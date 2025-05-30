@@ -1832,14 +1832,38 @@ figcaption {
 
 .toc {
   position: fixed;
-  width: 300px;
+  width: 50px;
+  height: 50px;
   right: 15px;
   bottom: 80px;
-  z-index:999;
+  z-index: 999;
   background: #fff;
   border: 1px solid rgba(161,161,161,.3);
 }
 
+.toc:hover {
+  width: auto;
+  height: auto;
+  max-height: auto;
+}
+
+.toc-title {
+  color:#ababab;
+  margin: 0.5em 0.6em;
+}
+
+.toc:hover .toc-title {
+  display: none;
+}
+
 .toc-item {
   margin: 1em 1em;
+  max-height: 500px;
+  overflow-y: auto;
+  overscroll-behavior-y:none;
+  visibility: hidden;
+}
+
+.toc:hover .toc-item {
+  visibility: visible;
 }
