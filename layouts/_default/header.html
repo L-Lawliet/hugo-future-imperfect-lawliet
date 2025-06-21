@@ -11,8 +11,12 @@
     {{ end }}
   </div>
   <div class="meta">
+    {{ if .Params.draft }}<div class="draft">{{ end }}
     <time datetime="{{ .Date }}">{{ .Render "date" }}</time>
     {{ with .Params.author }}<p>{{ . }}</p>{{ end }}
     {{ if .Site.Params.ReadingTime }}<p>{{ i18n "reading_time" .ReadingTime }}</p>{{ end }}
+    {{ if .Params.draft }}<h2><p>Draft</p></h2>{{ end }}
+    {{ if .Params.draft }}</div>{{ end }}
   </div>
+  
 </header>

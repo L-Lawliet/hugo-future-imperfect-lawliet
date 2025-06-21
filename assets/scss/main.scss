@@ -725,6 +725,10 @@ figcaption {
   }
 }
 
+.draft {
+  background-color: #e2e2e2; /* 浅灰色 */
+}
+
 .stats {
   @include display-flex;
   flex-direction: column;
