@@ -71,8 +71,8 @@
   {{- end -}}
   {{- .Scratch.Set "Permalink" .Permalink -}}
   {{- .Scratch.Set "Title" .Title -}}
-  {{- if .Params.Author -}}
-    {{- .Scratch.Set "Author" .Params.Author -}}
+  {{- if .Site.Params.author.name -}}
+    {{- .Scratch.Set "Author" .Site.Params.author.name -}}
   {{- else -}}
     {{- .Scratch.Set "Author" .Author -}}
   {{ end }}
