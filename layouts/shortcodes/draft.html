@@ -1,0 +1,4 @@
+<!-- layouts/shortcodes/draft.html -->
+{{- if .Site.BuildDrafts -}}
+  {{ .Inner | markdownify }}
+{{- end -}}
