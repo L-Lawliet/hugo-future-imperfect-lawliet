@@ -4,7 +4,8 @@
       "css/fonts.css",
       "css/academicons.css",
       "css/fontawesome.css",
-      "css/fancybox.css"
+      "css/fancybox.css",
+      "css/markmap.css"
    ],
    "scripts" : [
       "js/jquery-3.5.1.js",

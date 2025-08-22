@@ -1,0 +1,11 @@
+.markmap-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.markmap-container .markmap {
+    width: 100%;          /* 宽度自适应父级 */
+    max-width: 100%;      /* 避免溢出 */
+    height: auto;         /* 高度由 SVG 自己撑开 */
+}
