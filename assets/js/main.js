@@ -76,7 +76,7 @@ window.onload = function () {
       idx = lunr(function () {
         this.ref('ref');
         this.field('title');
-        this.field('data');
+        this.field('date');
         this.field('description');
         this.field('body');
 
